@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function calculateAge()
+{
+var name=document.getElementById("fname").value;
+var year=document.getElementById("yob").value;
+var currentYear = new Date().getFullYear();
+var age= currentYear-year;
+document.getElementById('message').innerHTML 
+                = 'Your age is '+age; 
+}
+</script>
+</head>
+<body>
+<label>Enter your First Name</label>
+<input type="text" id="fname"></input>
+<br>
+<br>
+<label>Enter your Year of Birth</label>
+<input type="text" id="yob"></input>
+<br>
+<br>
+<button onclick="calculateAge()">Submit</button>
+<br>
+<br>
+<p id="message"></p>
+</body>
+</html>

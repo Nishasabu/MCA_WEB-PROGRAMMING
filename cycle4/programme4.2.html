@@ -1,25 +1,23 @@
 <html>
 <head>
-<script>
-function rev()
-{
-var a,no,b,temp=0;
-
-no=Number(document.getElementById("no_input").value);
-
-b=no;
-while(no>0)
-{
-a=no%10;
-no=parseInt(no/10);
-temp=temp*10+a;
-}
-alert(temp);
-}
-</script>
-</head>
 <body>
-Enter any Number: <input id="no_input">
-<button onclick="rev()">Check</button></br></br>
+Enter the number<input type="text" id="text1">
+<p id="a"></p>
+<button onclick="compute()">Try it</button>
+
+<script>
+function compute() {
+ var rem,reverse=0;
+ var n=document.getElementById("text1").value;
+  while(n){
+       rem= n % 10;
+        reverse= (reverse* 10) +rem;
+         n=n/10|0
+        document.getElementById("a").innerHTML ="Reverse of the entered number is:"+ reverse;
+        } 
+} 
+</script>
 </body>
 </html>
+
+

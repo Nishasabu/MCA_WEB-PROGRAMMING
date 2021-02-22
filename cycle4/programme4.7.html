@@ -1,24 +1,34 @@
+
 <html>
 <head>
+	<title></title>
 </head>
 <body>
-<script>
-var num1=prompt("enter first number");
-var num2=prompt("enter second number");
-var num3=prompt("enter third number");
+Enter first number: <input type="text" id="myText1" ><br>
+Enter second number: <input type="text" id="myText2" ><br>
+Enter third number: <input type="text" id="myText3" ><br>
+<p id="b"></p>
 
-if(num1>=num2&&num1>=num3)
+<button onclick="myFunction()">Find</button>
+<p id="b"></p>
+<script>
+function myFunction() {
+   var a = document.getElementById("myText1").value;
+   var t = document.getElementById("myText2").value;
+   var s = document.getElementById("myText3").value;
+   if (a > t && a > s) {
+   	
+  document.getElementById("b").innerHTML = a + "is the largest";
+  }
+else if(s > a && s > t)
 {
-alert("first number is greatest number");
+	document.getElementById("b").innerHTML = s + "is the largest";
 }
-else if(num2>=num1 &&num2>=num3)
-{
-alert("second number is greast number");
+else{
+  document.getElementById("b").innerHTML = t + "is the largest";
 }
-else
-{
-alert("third number is the greatest number");
 }
+
 </script>
 </body>
 </html>

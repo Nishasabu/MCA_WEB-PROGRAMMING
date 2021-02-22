@@ -1,19 +1,26 @@
+
 <html>
 <head>
+	<title></title>
 </head>
 <body>
+Enter the number: <input type="text" id="myText1" onchange="myFunction()">
+<p id="b"></p>
 <script>
-var num =prompt("enter the number");
-if(num%3==0){
-document.write("Entered number is a multiple of 3");
-}
-else if(num%7==0){
-document.write("Entered number is a multiple of 7");
-}
+function myFunction() {
+   var a = document.getElementById("myText1").value;
+   var t = parseInt(a)%3;
+   var s = parseInt(a)%7;
+   if (t == 0 || s==0) {
+   	
+  alert(" Entered number is a multiple of 3 or 7")
+  }
 else
 {
-document.write("Entered number is not a multiple of 3 and 7");
+	alert(" Entered number is not a multiple of 3 or 7")
 }
+}
+
 </script>
 </body>
 </html>

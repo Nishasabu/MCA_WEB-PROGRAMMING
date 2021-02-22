@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+</style>
+</head>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+ 
+      if( document.myForm.firstName.value == "" ) {
+            alert( "Please provide your First name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+ if( document.myForm.lastName.value == "" ) {
+            alert( "Please provide your last name!" );
+            document.myForm.lastName.focus() ;
+            return false;
+         }
+ if( document.myForm.place.value == "" ) {
+            alert( "Please provide your place!" );
+            document.myForm.place.focus() ;
+            return false;
+}
+ if( document.myForm.address.value == "" ) {
+            alert( "Please provide your Address!" );
+            document.myForm.Address.focus() ;
+            return false;
+}
+        
+         if( document.myForm.Country.value == "-1" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+  
+}  
+</script>  
+<body>
+<h2>Registration form</h2> 
+<div class="container"> 
+<form name="myform" action="/action_page.php onsubmit="return validateform()" >  
+First Name: <input type="text" name="name"><br><br> 
+last Name:<input type="text" lname="name"><br><br>
+place:<input type="text" pl="place"><br><br>
+Address:<input type="text" name="address"/><br><br>
+<label for="country">Country:</label>
+<select name="country">
+<option value="In">America</option>
+<option value="AL">India</option>
+<option value="DZ">France</option>
+<option value="AS">Russia</option>
+</select>
+<br><br>
+<label for="email">Email:</label>
+<input type="text" name="email"/><br>
+<br>
+<label id="gender">Sex:</label>
+<input type="radio" name="msex" value="Male" /><span>Male</span>
+<input type="radio" name="fsex" value="Female" /><span>Female</span><br><br>
+<input type="submit" value="register">  
+</form>
+</div>
+</body>
+<html>  
