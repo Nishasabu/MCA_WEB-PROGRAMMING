@@ -1,13 +1,14 @@
-
 <html>
 <head>
-<title>Login</title>
+<title>login page</title>
 </head>
 <body>
-<form method="post" action="login.php">
-<p>Username: <input type="text" name="username" /></p>
-<p>Password: <input type="text" name="password" /></p>
-<p><input type="submit" value="Let me in" /></p>
+<form method="POST" action="login.php">
+<p>Username:<input type="text" name="user"/></p>
+<br>
+<p>Password:<input type="text" name="pass"/></p>
+<br>
+<p><input type="submit" value="let me in"/></p>
 </form>
 </body>
-</html>
+<html>
