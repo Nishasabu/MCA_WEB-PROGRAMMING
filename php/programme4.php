@@ -3,6 +3,7 @@
 <title>insert data in form</title>
 </head>
 <body>
+<h1 style="text-align:centre;"><u><b>STUDENT REGISTRATION</b></u></h1>
 <form action = "getdata.php" method = "POST">
 Name:
 <input type = "text" name = "txtname">

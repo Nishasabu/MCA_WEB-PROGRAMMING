@@ -12,10 +12,10 @@ $data=mysqli_query($con, $qry);
 <h1 style="text-align:center"><u>CUSTOMER DETAILS</u></h1>
 <table align="center" border="1">
 <tr>
-<th></th>
-<th>Student Name</th>
-<th>Branch</th>
-<th>Mark</th>
+<th>c_no</th>
+<th>c_name</th>
+<th>item_purchased</th>
+<th>mobile no</th>
 </tr>
 <?php
 while($res=mysqli_fetch_array($data))

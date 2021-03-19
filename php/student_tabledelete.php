@@ -12,7 +12,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "DELETE FROM STUDENT WHERE id=15";
+$sql = "DELETE FROM table_student WHERE id=2";
 
 
 if (mysqli_query($conn, $sql)) {
